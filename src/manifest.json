@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Gemini Enter for Newline",
+  "version": "1.0.0",
+  "description": "Enterで改行、Cmd+Enter/Ctrl+Enterで送信",
+  "content_scripts": [
+    {
+      "matches": ["https://gemini.google.com/app*"],
+      "js": ["content-scripts/index.js"],
+      "run_at": "document_start"
+    }
+  ]
+}

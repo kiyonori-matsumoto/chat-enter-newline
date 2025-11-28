@@ -21,10 +21,11 @@ export default defineConfig({
     rollupOptions: {
       input: {
         'content-scripts/index': resolve(__dirname, 'src/content-scripts/index.ts'),
+        'background/background': resolve(__dirname, 'src/background/background.ts'),
       },
       output: {
         entryFileNames: '[name].js',
-        format: 'iife',
+        format: 'es',
       },
     },
     outDir: 'dist',

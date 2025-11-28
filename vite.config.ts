@@ -10,6 +10,10 @@ export default defineConfig({
           src: 'src/manifest.json',
           dest: '.',
         },
+        {
+          src: 'public/icons',
+          dest: '.',
+        },
       ],
     }),
   ],
